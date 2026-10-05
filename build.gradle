@@ -28,6 +28,8 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-data-rest-test'
     testImplementation 'org.springframework.boot:spring-boot-starter-webmvc-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    // runtimeOnly 'com.mysql:mysql-connector-j' (ou mysql-connector-java selon ce que vous avez)
+    runtimeOnly 'com.h2database:h2'
 }
 
 tasks.named('test') {
